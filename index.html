@@ -1,11 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML vs HTML5</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fefefe;
+      padding: 20px;
+    }
+
+    section {
+      background: #ffffff;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    h4 {
+      font-size: 15px;
+      color: #666;
+    }
+
+    span {
+      font-weight: bold;
+      color: #007BFF;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      h2, h3 {
+        font-size: 16px;
+      }
+
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+      }
+
+      td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+        color: #555;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+
+  <section>
+    <div>
+      <h1>1) What is HTML5?</h1>
+    </div>
+    <h2><span>ANS: </span> HTML মানে হলো HyperText Markup Language। এটা একটা ভাষা, যেটা দিয়ে ওয়েব পেজ বানানো হয়।</h2>
+    <h4>ধরো তুমি একটা বই লিখছো। সেই বইয়ে শিরোনাম, অনুচ্ছেদ, ছবি, লিংক এসব থাকে। HTML সেই বইয়ের কাঠামোটা তৈরি করে — কোনটা শিরোনাম, কোনটা প্যারা, কোনটা ছবি ইত্যাদি ঠিক করে দেয়।</h4>
+  </section>
+
+  <section>
+    <div>
+      <h1>2) HTML Element কী?</h1>
+    </div>
+    <h2><span>ANS: </span> একটা HTML Element হচ্ছে HTML এর একটা অংশ যেটা শুরু হয় একটা start tag দিয়ে, মাঝে থাকে content, আর শেষ হয় end tag দিয়ে।</h2>
+  </section>
+
+  <section>
+    <div>
+      <h1>3) 🏷️ HTML Attributes কী?</h1>
+    </div>
+    <h2><span>ANS: </span> Attributes হলো HTML Element-এর অতিরিক্ত তথ্য বা বৈশিষ্ট্য।</h2>
+    <h3>⭐ কিছু Common HTML Attributes: <br> href, src, alt, style, class, id, title, target</h3>
+  </section>
+
+  <section>
+    <h2>📘 HTML vs HTML5 – সহজ ব্যাখ্যা</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>বিষয়</th>
+          <th>HTML (পুরনো ভার্সন)</th>
+          <th>HTML5 (নতুন ভার্সন)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="বিষয়">📅 প্রকাশকাল</td>
+          <td data-label="HTML">1990s</td>
+          <td data-label="HTML5">2014 সাল</td>
+        </tr>
+        <tr>
+          <td data-label="বিষয়">🔧 Doctype</td>
+          <td data-label="HTML">জটিল ও লম্বা</td>
+          <td data-label="HTML5">খুবই সহজ</td>
+        </tr>
+        <tr>
+          <td data-label="বিষয়">🎬 ভিডিও/অডিও সাপোর্ট</td>
+          <td data-label="HTML">নাই, Flash দরকার হতো</td>
+          <td data-label="HTML5">&lt;video&gt; ও &lt;audio&gt; দিয়ে সম্ভব</td>
+        </tr>
+        <tr>
+          <td data-label="বিষয়">🧱 নতুন ট্যাগ</td>
+          <td data-label="HTML">ছিল না</td>
+          <td data-label="HTML5">&lt;header&gt;, &lt;footer&gt;, &lt;section&gt; ইত্যাদি</td>
+        </tr>
+        <tr>
+          <td data-label="বিষয়">🧠 Storage</td>
+          <td data-label="HTML">Cookies</td>
+          <td data-label="HTML5">LocalStorage, SessionStorage</td>
+        </tr>
+        <tr>
+          <td data-label="বিষয়">📍 Location API</td>
+          <td data-label="HTML">ছিল না</td>
+          <td data-label="HTML5">আছে (Geolocation API)</td>
+        </tr>
+        <tr>
+          <td data-label="বিষয়">📱 Mobile Friendly?</td>
+          <td data-label="HTML">Responsive করতে বাড়তি কোড লাগত</td>
+          <td data-label="HTML5">Mobile-first ডিজাইন সাপোর্ট</td>
+        </tr>
+        <tr>
+          <td data-label="বিষয়">🧪 ফর্ম ফিচার</td>
+          <td data-label="HTML">সীমিত</td>
+          <td data-label="HTML5">date, email, range ইত্যাদি নতুন input টাইপ</td>
+        </tr>
+        <tr>
+          <td data-label="বিষয়">🎨 Graphics</td>
+          <td data-label="HTML">সম্ভব না</td>
+          <td data-label="HTML5">&lt;canvas&gt; এবং SVG সাপোর্ট</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- css start -->
+
 </body>
 </html>
